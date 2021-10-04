@@ -1,12 +1,15 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React from 'react';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React, { useContext } from 'react';
 import logo from "../../images/83032059_963125947415816_4773941572108550144_n.jpg"
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+// import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom';
 
 
 const MenuBar = () => {
-  const element = <FontAwesomeIcon icon={faCoffee} />
+
+
+
+  // const element = <FontAwesomeIcon icon={faCoffee} />
 
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -20,10 +23,10 @@ const MenuBar = () => {
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
           <li className="nav-item">
-            <Link className="nav-link active" aria-current="page" href="#">Home</Link>
+            <Link className="nav-link active" aria-current="page" to="/home">Home</Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" href="#">Services</Link>
+            <Link className="nav-link" to="/service">Services</Link>
           </li>
          
           <li className="nav-item">

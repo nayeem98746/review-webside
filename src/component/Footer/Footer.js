@@ -1,12 +1,17 @@
 import React from 'react';
 import logo from "../../images/education.png"
+import { faCoffee, } from '@fortawesome/free-solid-svg-icons'
+
 import "./Footer.css"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Footer = () => {
+    const element = <FontAwesomeIcon icon={ faCoffee} />
+
     return (
         <footer className=" footer-container">
             <div className="d-flex p-3">
-                <div className="col-md-6 d-flex footer-details   ">
+                <div className="col-md-4 d-flex footer-details   ">
                     <div>
                         <h4>POPULAR</h4>
                         <p>Academic Calander</p>
@@ -34,16 +39,17 @@ const Footer = () => {
                         <p>Student Jobs</p>
                     </div>
                 </div>
-                <div className="col-md-3  ">
-                    <h3 className="">MEET YOUR FUTURE</h3>
+                <div className="col-md-4 middle-style   ">
+                    <h3 >MEET YOUR FUTURE</h3>
                     <img  height="25px" width="150px" src={logo} alt="" />
                     <br />
                     <button className="button-style">APPLY NOW</button>
                 </div>
-                <div className="col-md-3">
+                <div className="col-md-4">
                    
-                    <small>Tangail Road:102</small>
-                    <small>phone:0175263652</small>
+                    <h2> Tangail Road:102</h2>
+                    <h2>phone:0175263652</h2>
+                    
                 </div>
             </div>
         </footer>

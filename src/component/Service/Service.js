@@ -1,9 +1,23 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import SingleSubject from '../SingleSubject/SingleSubject';
 
 const Service = () => {
+    const [subject, setSubject] = useState([])
+    useEffect(()=>{
+        fetch('./subject.json')
+        .then(res => res.json())
+        .then(data => setSubject(data))
+
+    },[])
     return (
         <div>
-            <h2>This is service</h2>
+            {
+                subject.map(sub => <SingleSubject
+                key={sub.id}
+                sub={sub}
+                
+                ></SingleSubject> )
+            }
         </div>
     );
 };

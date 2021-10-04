@@ -8,7 +8,7 @@ const Header = () => {
     return (
        
         <header className="  bg-color ">
-             <MenuBar></MenuBar>
+           
             <div className= "row d-flex align-items-center justify-content-center banner-style">
             <div  className=" col-md-6 banner-details">
                 <h1>Major General Mahmudul Hasan Adarsha College, Tangail</h1>

@@ -1,0 +1,22 @@
+
+.footer-container{
+    background-color:slategray;
+}
+.button-style{
+    padding: 15px;
+    border-radius: 10px;
+    background-color:hotpink ;
+    color: whitesmoke;
+    font-size: 20px;
+}
+.footer-details div{
+    padding-right: 40px;
+
+}
+.footer-details{
+    padding-left: 40px;
+}
+.footer-container{
+    padding: 10px;
+    padding-left: 20px;
+}

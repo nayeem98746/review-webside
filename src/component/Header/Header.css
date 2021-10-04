@@ -1,0 +1,20 @@
+
+
+.banner-details h1 {
+    font-size:60px;
+    color:whitesmoke;
+}
+.banner-details button{
+    padding: 15px;
+    border-radius: 10px;
+    background-color:hotpink ;
+    color: whitesmoke;
+    font-size: 20px;
+}
+.bg-color{
+    background-color:#2a2d32;
+    padding: 50px;
+}
+.banner-style{
+    padding: 50px;
+}

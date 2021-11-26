@@ -5,6 +5,7 @@ import Home from './component/Home/Home';
 import Error from './component/Error/Error';
 import Service from './component/Service/Service';
 import MenuBar from './component/MenuBar/MenuBar';
+import About from "./component/About/About";
 
 function App() {
   
@@ -24,8 +25,12 @@ function App() {
         
           <Service></Service>
         </Route>
-        <Route exact path="/">
+        <Route  path="/">
           <Home></Home>
+
+        </Route>
+        <Route  path="/about">
+          <About></About>
 
         </Route>
         <Route path="*">

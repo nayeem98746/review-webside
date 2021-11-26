@@ -12,6 +12,7 @@ const MenuBar = () => {
   // const element = <FontAwesomeIcon icon={faCoffee} />
 
   return (
+    
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
     <div className="container-fluid">
       <Link className="navbar-brand" href="#">
@@ -30,7 +31,7 @@ const MenuBar = () => {
           </li>
          
           <li className="nav-item">
-            <Link className="nav-link disabled">About</Link>
+            <Link className="nav-link disabled" to="/about">About</Link>
           </li>
           <li className="nav-item">
             <Link className="nav-link disabled">Contact us</Link>
